@@ -1,31 +1,44 @@
-# 🐍 Python Fundamentals -- Complete Detailed Guide (Group 1)
+# 🐍 PYTHON FUNDAMENTALS -- COMPLETE MASTER GUIDE (GROUP 1)
 
-This README contains a complete in-depth explanation of Python
-Fundamentals including detailed concepts and examples.
+This document contains a FULL detailed explanation of all Python
+Fundamental topics. Nothing is omitted. Every concept includes
+explanation + examples.
+
+Total Topics Covered: 15
 
 ------------------------------------------------------------------------
 
 # 1️⃣ Python Comments
 
-## What are Comments?
+## What Are Comments?
 
-Comments are lines in code that Python ignores.\
-They are used to: - Explain logic - Improve readability - Debug code -
-Temporarily disable code
+Comments are lines in code that Python completely ignores during
+execution.
 
-### Single Line Comment
+### Why We Use Comments
+
+-   To explain logic
+-   To improve readability
+-   To help teamwork
+-   To debug code
+-   To temporarily disable code
+
+### Single-Line Comment
 
 ``` python
 # This is a single-line comment
-print("Hello")
+print("Hello World")
 ```
 
-### Multi-line Comment
+### Multi-Line Comment
+
+Python does not have a true multi-line comment syntax. We use triple
+quotes:
 
 ``` python
 """
 This is a multi-line comment
-It can span multiple lines
+It spans multiple lines
 """
 ```
 
@@ -35,7 +48,7 @@ It can span multiple lines
 
 ## What is a Variable?
 
-A variable stores data.
+A variable is a container used to store data.
 
 ``` python
 name = "Arulesh"
@@ -44,16 +57,14 @@ age = 21
 
 ## Variable Naming Rules
 
--   Can contain letters, numbers, underscores
--   Cannot start with a number
+-   Must start with letter or underscore
+-   Cannot start with number
 -   Cannot use reserved keywords
-
-``` python
-my_name = "Python"   # valid
-# 2name = "Wrong"    # invalid
-```
+-   Case-sensitive
 
 ## Dynamic Typing
+
+Python automatically detects data type.
 
 ``` python
 x = 10
@@ -64,7 +75,11 @@ x = "Hello"
 
 # 3️⃣ Data Types
 
-## Integer
+Python has several built-in data types.
+
+## Integer (int)
+
+Whole numbers.
 
 ``` python
 a = 10
@@ -72,17 +87,23 @@ a = 10
 
 ## Float
 
+Decimal numbers.
+
 ``` python
 b = 3.14
 ```
 
-## String
+## String (str)
+
+Sequence of characters.
 
 ``` python
 name = "Python"
 ```
 
-## Boolean
+## Boolean (bool)
+
+True or False.
 
 ``` python
 is_active = True
@@ -90,11 +111,15 @@ is_active = True
 
 ## List
 
+Ordered, mutable collection.
+
 ``` python
 numbers = [1, 2, 3]
 ```
 
 ## Tuple
+
+Ordered, immutable collection.
 
 ``` python
 point = (10, 20)
@@ -102,11 +127,15 @@ point = (10, 20)
 
 ## Set
 
+Unordered, unique elements.
+
 ``` python
 unique_numbers = {1, 2, 3}
 ```
 
 ## Dictionary
+
+Key-value pairs.
 
 ``` python
 student = {"name": "Arulesh", "age": 21}
@@ -115,6 +144,8 @@ student = {"name": "Arulesh", "age": 21}
 ------------------------------------------------------------------------
 
 # 4️⃣ Type Casting
+
+Type casting means converting one data type into another.
 
 ## String to Integer
 
@@ -138,6 +169,8 @@ x = 3.9
 print(int(x))
 ```
 
+Note: Decimal part is removed (not rounded).
+
 ------------------------------------------------------------------------
 
 # 5️⃣ Python Print
@@ -148,13 +181,13 @@ print(int(x))
 print("Hello World")
 ```
 
-## Multiple Values
+## Printing Multiple Values
 
 ``` python
 print("Age:", 21)
 ```
 
-## f-Strings
+## f-Strings (Recommended)
 
 ``` python
 name = "Arulesh"
@@ -165,6 +198,8 @@ print(f"My name is {name} and I am {age} years old")
 ------------------------------------------------------------------------
 
 # 6️⃣ Python Strings
+
+Strings are immutable sequences of characters.
 
 ## Indexing
 
@@ -199,23 +234,25 @@ Strings cannot be modified after creation.
 
 # 7️⃣ Lists
 
+Lists are ordered and mutable.
+
 ``` python
 numbers = [10, 20, 30]
 ```
 
-## Access
+## Access Elements
 
 ``` python
 print(numbers[0])
 ```
 
-## Modify
+## Modify Elements
 
 ``` python
 numbers[1] = 50
 ```
 
-## Methods
+## List Methods
 
 ``` python
 numbers.append(40)
@@ -225,7 +262,7 @@ numbers.pop()
 numbers.sort()
 ```
 
-## Loop
+## Loop Through List
 
 ``` python
 for num in numbers:
@@ -236,16 +273,20 @@ for num in numbers:
 
 # 8️⃣ Tuples
 
+Tuples are ordered but immutable.
+
 ``` python
 point = (10, 20)
 print(point[0])
 ```
 
-Tuples are immutable.
+Why use tuples? - Faster than lists - Protect data from modification
 
 ------------------------------------------------------------------------
 
 # 9️⃣ Sets
+
+Sets store unique values.
 
 ``` python
 nums = {1, 2, 3, 3}
@@ -267,6 +308,8 @@ print(a.difference(b))
 
 # 🔟 Dictionaries
 
+Dictionaries store data in key-value pairs.
+
 ``` python
 student = {
     "name": "Arulesh",
@@ -274,20 +317,20 @@ student = {
 }
 ```
 
-## Access
+## Access Value
 
 ``` python
 print(student["name"])
 ```
 
-## Add / Modify
+## Add or Modify
 
 ``` python
 student["city"] = "Chennai"
 student["age"] = 22
 ```
 
-## Loop
+## Loop Through Dictionary
 
 ``` python
 for key, value in student.items():
@@ -297,6 +340,8 @@ for key, value in student.items():
 ------------------------------------------------------------------------
 
 # 1️⃣1️⃣ If Else
+
+Conditional execution.
 
 ``` python
 age = 18
@@ -310,6 +355,8 @@ else:
 ------------------------------------------------------------------------
 
 # 1️⃣2️⃣ If Elif Else
+
+Multiple conditions.
 
 ``` python
 marks = 85
@@ -349,6 +396,8 @@ print(status)
 
 # 1️⃣4️⃣ Switch (match-case)
 
+Available in Python 3.10+
+
 ``` python
 day = 1
 
@@ -382,7 +431,7 @@ while count < 5:
     count += 1
 ```
 
-## Break Example
+## Break Statement
 
 ``` python
 for i in range(5):
@@ -391,6 +440,37 @@ for i in range(5):
     print(i)
 ```
 
+## Continue Statement
+
+``` python
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+```
+
 ------------------------------------------------------------------------
 
-# ✅ Total Topics Covered: 15
+# ✅ FINAL SUMMARY
+
+All 15 Python Fundamental topics have been covered in detail:
+
+1.  Comments
+2.  Variables
+3.  Data Types
+4.  Type Casting
+5.  Print
+6.  Strings
+7.  Lists
+8.  Tuples
+9.  Sets
+10. Dictionaries
+11. If Else
+12. If Elif Else
+13. If Branch Types
+14. Switch (match-case)
+15. Loops
+
+------------------------------------------------------------------------
+
+END OF DOCUMENT
