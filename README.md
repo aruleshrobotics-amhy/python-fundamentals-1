@@ -1,10 +1,5 @@
-# 🐍 PYTHON FUNDAMENTALS -- COMPLETE MASTER GUIDE (GROUP 1)
+# 🐍 PYTHON FUNDAMENTALS -- COMPLETE MASTER GUIDE(GROUP 1)
 
-This document contains a FULL detailed explanation of all Python
-Fundamental topics. Nothing is omitted. Every concept includes
-explanation + examples.
-
-Total Topics Covered: 15
 
 ------------------------------------------------------------------------
 
